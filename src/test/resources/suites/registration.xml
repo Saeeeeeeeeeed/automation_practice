@@ -1,0 +1,11 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="Regression Test">
+    <parameter name="url" value="http://www.automationpractice.pl/index.php" />
+
+    <test name="Test">
+
+        <classes>
+            <class name="RegistrationTest.RegistrationInLoginPageTest"/>
+        </classes>
+    </test>
+</suite>

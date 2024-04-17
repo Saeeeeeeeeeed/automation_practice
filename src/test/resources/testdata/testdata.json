@@ -1,0 +1,84 @@
+{
+  "RegistrationTestDataInLoginPage": [
+    {
+      "emailAddress" : "",
+      "expectedResult" : "Invalid email address."
+    },
+    {
+      "emailAddress" : "saeed",
+      "expectedResult" : "Invalid email address."
+    },
+    {
+      "emailAddress" : "mmm@gmail.com",
+      "expectedResult" : "An account using this email address has already been registered. Please enter a valid password or request a new one."
+    },
+  {
+    "emailAddress" : "{{email}}",
+    "expectedResult" : "CREATE AN ACCOUNT"
+  }
+    ],
+  "RegistrationTestPage": [
+    {
+      "gender" : "",
+      "firstName" : "",
+      "lastName" : "",
+      "emailAddress" : "{{email}}",
+      "password" : "",
+      "day" : "",
+      "month" : "",
+      "year" : "",
+      "expectedResult" : "There are 3 errors"
+    },
+    {
+      "gender" : "M",
+      "firstName" : "mohamed",
+      "lastName" : "saeed",
+      "emailAddress" : "{{email}}",
+      "password" : "1234",
+      "day" : "1",
+      "month" : "1",
+      "year" : "2006",
+      "expectedResult" : "There is 1 error"
+    },
+    {
+      "gender" : "M",
+      "firstName" : "mohamed",
+      "lastName" : "saeed",
+      "emailAddress" : "{{email}}",
+      "password" : "1234566",
+      "day" : "1",
+      "month" : "1",
+      "year" : "2006",
+      "expectedResult" : "Your account has been created."
+    }
+  ],
+  "loginTestData" :
+  [
+    {
+      "emailAddress" : "",
+      "password" : "",
+      "expectedResult" : "An email address required."
+    },
+    {
+      "emailAddress" : "saeed@test.com",
+      "password" : "123",
+      "expectedResult" : "Invalid password."
+    },
+    {
+      "emailAddress" : "saeed",
+      "password" : "123456",
+      "expectedResult" : "Invalid email address."
+    },
+    {
+      "emailAddress" : "saeed@test.com",
+      "password" : "123456",
+      "expectedResult" : "MY ACCOUNT"
+    }
+  ],
+  "cart" : [
+    {
+      "expectedResult1" : "Product successfully added to your shopping cart",
+      "expectedResult2" : "Your order on My Shop is complete."
+    }
+  ]
+}
