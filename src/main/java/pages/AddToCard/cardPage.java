@@ -1,4 +1,4 @@
-package AddToCard;
+package pages.AddToCard;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;

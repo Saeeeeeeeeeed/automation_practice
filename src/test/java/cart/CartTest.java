@@ -1,10 +1,8 @@
 package cart;
 
-import AddToCard.cardPage;
+import pages.AddToCard.cardPage;
 import base.BaseTest;
-import org.testng.SkipException;
 import org.testng.annotations.BeforeClass;
-import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 import pages.base.Login;
 
